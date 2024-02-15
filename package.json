@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha test/**/*Test.js",
     "samples": "mocha samples/**/*Samples.js",
-    "cover": "istanbul cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "cover": "nyc npm test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
