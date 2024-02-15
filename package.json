@@ -4,8 +4,8 @@
   "description": "iyzipay api node.js client",
   "main": "lib/Iyzipay.js",
   "scripts": {
-    "test": "mocha $(find test -name '*Test.js')",
-    "samples": "mocha $(find samples -name '*Samples.js')",
+    "test": "mocha test/**/*Test.js",
+    "samples": "mocha samples/**/*Samples.js",
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
